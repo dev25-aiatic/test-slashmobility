@@ -1,0 +1,14 @@
+<div class="flex-row">
+  <input
+    type="file"
+    name="image"
+    (change)="fileProgress($event)"
+    id="upload-photo"
+  />
+  <img [src]="previewUrl" class="header-image" />
+  <label style="color: white;" for="upload-photo">
+    <span class="mat-button-wrapper"
+      ><mat-icon>delete_forever</mat-icon></span
+    ></label
+  >
+</div>
